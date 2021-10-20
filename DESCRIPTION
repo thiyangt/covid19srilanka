@@ -1,0 +1,16 @@
+Package: covid19srilanka
+Title: The 2019 Novel Coronavirus COVID-19 (2019-nCoV) Data in Sri Lanka
+Version: 0.0.0.9000
+Authors@R: 
+    person("Thiyanga S.", "Talagala", , "ttalagala@sjp.ac.lk", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: Provides a daily counts of the Coronavirus (COVID19) cases by districts and country. Data source: Epidemiological Unit, Ministry of Health, Sri Lanka <https://www.epid.gov.lk/web/>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Depends: 
+    R (>= 2.10)
+Imports:
+    tidyverse

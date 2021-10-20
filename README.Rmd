@@ -1,0 +1,57 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# covid19srilanka
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The covid19srilanka package provides a tidy format dataset of the 2019 Novel Coronavirus COVID-19 (2019-nCoV) epidemic in Sri Lanka
+
+## Installation
+
+You can install the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("thiyangt/covid19srilanka")
+```
+## Example
+
+```{r}
+library(coronavirus)
+```
+
+## Covid-19 Cases in Sri Lanka
+
+```{r}
+data("covid.cases")
+head(covid.cases)
+```
+
+## District-wise Covid-19 Cases in Sri Lanka
+
+```{r}
+data("district.wise.cases")
+head(district.wise.cases)
+```
+
+## Vaccination Details in Sri Lanka
+
+
+```{r}
+data("vaccination")
+head(vaccination)
+```

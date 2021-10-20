@@ -51,6 +51,14 @@ head(district.wise.cases)
 #> 4 2021-08-01      Kandy 14576
 #> 5 2021-08-01 Kurunagala 15327
 #> 6 2021-08-01      Galle 14841
+summary(district.wise.cases)
+#>       Date              District             Count      
+#>  Min.   :2021-08-01   Length:832         Min.   : 1116  
+#>  1st Qu.:2021-08-08   Class :character   1st Qu.: 3428  
+#>  Median :2021-08-16   Mode  :character   Median : 6735  
+#>  Mean   :2021-08-16                      Mean   :13445  
+#>  3rd Qu.:2021-08-24                      3rd Qu.:13057  
+#>  Max.   :2021-09-01                      Max.   :99240
 ```
 
 ## Vaccination Details in Sri Lanka

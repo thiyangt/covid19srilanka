@@ -46,6 +46,7 @@ head(covid.cases)
 ```{r}
 data("district.wise.cases")
 head(district.wise.cases)
+summary(district.wise.cases)
 ```
 
 ## Vaccination Details in Sri Lanka

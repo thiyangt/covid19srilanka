@@ -13,7 +13,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-# covid19srilanka
+# covid19srilanka <a href='https://github.com/thiyangt/covid19srilanka'><img src='man/figures/hex.png' align="right"  /></a> 
+
 
 <!-- badges: start -->
 <!-- badges: end -->

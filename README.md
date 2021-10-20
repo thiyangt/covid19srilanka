@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# covid19srilanka
+# covid19srilanka <a href='https://github.com/thiyangt/covid19srilanka'><img src='man/figures/hex.png' align="right"  /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->

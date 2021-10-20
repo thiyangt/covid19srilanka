@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# covid19srilanka <a href='https://github.com/thiyangt/covid19srilanka'><img src='man/figures/hex.png' align="right"  /></a>
+# covid19srilanka <a href='https://github.com/thiyangt/covid19srilanka'><img src='man/figures/hex.png' align="right"  width="200"/></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -51,14 +51,6 @@ head(district.wise.cases)
 #> 4 2021-08-01      Kandy 14576
 #> 5 2021-08-01 Kurunagala 15327
 #> 6 2021-08-01      Galle 14841
-summary(district.wise.cases)
-#>       Date              District             Count      
-#>  Min.   :2021-08-01   Length:832         Min.   : 1116  
-#>  1st Qu.:2021-08-08   Class :character   1st Qu.: 3428  
-#>  Median :2021-08-16   Mode  :character   Median : 6735  
-#>  Mean   :2021-08-16                      Mean   :13445  
-#>  3rd Qu.:2021-08-24                      3rd Qu.:13057  
-#>  Max.   :2021-09-01                      Max.   :99240
 ```
 
 ## Vaccination Details in Sri Lanka
@@ -74,3 +66,20 @@ head(vaccination)
 #> 5 2021-05-01 Covishield Vaccine     925242       60757
 #> 6 2021-05-01  Sinopharm Vaccine       2865        2435
 ```
+
+# Example
+
+``` r
+library(tidyverse)
+#> ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
+#> ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
+#> ✓ tibble  3.1.5     ✓ dplyr   1.0.7
+#> ✓ tidyr   1.1.4     ✓ stringr 1.4.0
+#> ✓ readr   1.4.0     ✓ forcats 0.5.1
+#> ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+#> x dplyr::filter() masks stats::filter()
+#> x dplyr::lag()    masks stats::lag()
+covid.cases %>% filter(Type=="Confirmed") %>% ggplot(aes(x=Date, y=Count)) + geom_line() + ggtitle("Covid-19 confirmed cases in Sri Lanka")
+```
+
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />

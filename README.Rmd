@@ -13,7 +13,8 @@ knitr::opts_chunk$set(
 )
 ```
 
-# covid19srilanka <a href='https://github.com/thiyangt/covid19srilanka'><img src='man/figures/hex.png' align="right"  /></a> 
+# covid19srilanka <a href='https://github.com/thiyangt/covid19srilanka'><img src='man/figures/hex.png' align="right"  width="200"/></a> 
+
 
 
 <!-- badges: start -->
@@ -47,7 +48,6 @@ head(covid.cases)
 ```{r}
 data("district.wise.cases")
 head(district.wise.cases)
-summary(district.wise.cases)
 ```
 
 ## Vaccination Details in Sri Lanka
@@ -56,4 +56,11 @@ summary(district.wise.cases)
 ```{r}
 data("vaccination")
 head(vaccination)
+```
+
+# Example
+
+```{r}
+library(tidyverse)
+covid.cases %>% filter(Type=="Confirmed") %>% ggplot(aes(x=Date, y=Count)) + geom_line() + ggtitle("Covid-19 confirmed cases in Sri Lanka")
 ```

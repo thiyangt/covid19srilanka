@@ -5,7 +5,7 @@
 \alias{covid.cases}
 \title{Covid-19 Cases by Type (Confirmed, Recovered, Death)}
 \format{
-An object of class \code{spec_tbl_df} (inherits from \code{tbl_df}, \code{tbl}, \code{data.frame}) with 2084 rows and 3 columns.
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 2200 rows and 3 columns.
 }
 \source{
 Epidemiological Unit, Ministry of Health, Sri Lanka \url{https://www.epid.gov.lk/web/}.

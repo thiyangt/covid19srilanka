@@ -37,6 +37,14 @@ head(covid.cases)
 #> 4 2020-03-29    Active   104
 #> 5 2020-03-30 Confirmed   120
 #> 6 2020-03-30 Recovered    11
+tail(covid.cases)
+#>            Date      Type  Count
+#> 2195 2021-09-29    Deaths  12786
+#> 2196 2021-09-29   Actives  45881
+#> 2197 2021-09-30 Confirmed 516465
+#> 2198 2021-09-30 Recovered 457488
+#> 2199 2021-09-30    Deaths  12847
+#> 2200 2021-09-30   Actives  46130
 ```
 
 ## District-wise Covid-19 Cases in Sri Lanka
@@ -75,7 +83,7 @@ library(tidyverse)
 #> ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
 #> ✓ tibble  3.1.5     ✓ dplyr   1.0.7
 #> ✓ tidyr   1.1.4     ✓ stringr 1.4.0
-#> ✓ readr   1.4.0     ✓ forcats 0.5.1
+#> ✓ readr   2.0.2     ✓ forcats 0.5.1
 #> ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
 #> x dplyr::filter() masks stats::filter()
 #> x dplyr::lag()    masks stats::lag()

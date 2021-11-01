@@ -41,6 +41,7 @@ library(coronavirus)
 ```{r}
 data("covid.cases")
 head(covid.cases)
+tail(covid.cases)
 ```
 
 ## District-wise Covid-19 Cases in Sri Lanka
